@@ -4,9 +4,7 @@ mean(edades_descubrimientos)
 
 #Ejercicio 2 Vector_cantidad_artefactos
 cantidad_artefactos <- c(534,28,76,1030,643)
-# Suma
-valor_suma <- 534+28+76+1030+643
-print(valor_suma)
+sum(cantidad_artefactos)
 
 #Ejericio 3 Vector_profundidad_hallazgos_en_metros
 profundidad_hallazgos <- c(3,5,7,9,11)
@@ -18,13 +16,12 @@ materiales_encontrados <- c("lítico", "cerámica",
 length(materiales_encontrados)
 
 #Ejericio 5 Vector_años_excavaciones
-años_excavaciones <- c(2002,2004,2006,2008,2010)
-#Resta
-valor_resta <- 2010-2002
-print(valor_resta)
+años_excavaciones <- c(2002,2004,2006,2008,2010,2020)
+años_excavaciones[length(años_excavaciones)]-
+  años_excavaciones[1]
 
 #Ejercicio 6 matriz_años_excavaciones
-matrix1 <- matrix(c(1,3,5,7,9,2,4,6,8,10,20,11,14,
+matrix1 <- matrix(c(1,3,5,7,9,2,100,6,8,10,20,11,14,
                     15,12,13,16,18,17,19,21,22,
                     23,24,25), 
                   nrow = 5, ncol = 5)
@@ -32,26 +29,26 @@ print(matrix1)
 which.max(rowSums(matrix1))
 
 #Ejercicio 7 matriz_descubrimientos_regiones_geograficas
-matrix2 <- matrix(c(1920,1930,1940,1970,1960,1990,
+matrix2 <- matrix(c(1920,1930,1940,1970,1960,1000,
                     1991,1995,2006,2015,2017,2011,
                     2005,2010,2023),
                   nrow = 5, ncol = 3)
 print(matrix2)
-which.min(colSums(matrix2))
+which.min(colMeans(matrix2))
 
 #Ejercicio 8 matriz_periodo_artefacto
 matrix3 <- matrix(c(3,450,27,81,32,45,24,1,
-                    2002,65,83,12,54,21,15),
+                    2,65,83,12,54,21,15),
                   nrow = 3, ncol = 5)
 print(matrix3)
-which.max(colSums(matrix3))
+which.max(rowSums(matrix3))
 
 #Ejercicio 9 matriz_sitios_arqueologicos_descubrimientos_profundidad
 matrix4 <- matrix(c(1,3,5,9,7,2,4,8,10,15,
                     13,6,14,12,11),
                   nrow = 3, ncol = 5)
 print(matrix4)
-which.min(rowSums(matrix4))
+which.min(rowMeans(matrix4))
 
 #Ejercicio 10 matriz_periodo_tipos_materiales
 matrix5 <- matrix(c(21,24,16,15,92,65,1,47,
