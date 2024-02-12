@@ -19,8 +19,7 @@ length(unique(materiales_encontrados))
 
 #Ejericio 5 Vector_años_excavaciones
 años_excavaciones <- c(2002,2004,2006,2008,2010,2020)
-años_excavaciones[length(años_excavaciones)]-
-  años_excavaciones[1]
+length(unique(años_excavaciones))
 
 #Ejercicio 6 matriz_años_excavaciones
 matrix1 <- matrix(c(1,3,5,7,9,2,100,6,8,10,20,11,14,
@@ -29,6 +28,7 @@ matrix1 <- matrix(c(1,3,5,7,9,2,100,6,8,10,20,11,14,
                   nrow = 5, ncol = 5)
 print(matrix1)
 which.max(rowSums(matrix1))
+
 
 #Ejercicio 7 matriz_descubrimientos_regiones_geograficas
 matrix2 <- matrix(c(1920,1930,1940,1970,1960,1000,
@@ -98,6 +98,7 @@ fecha_finalizacion <- sample(c(2008:2010),
                              excavaciones_equipo, replace = TRUE)
 excavaciones_equipo <- data.frame(equipo = equipo, sitio_arqueologico = sitio_arqueologico, fecha_inicio = fecha_inicio, fecha_finalizacion = fecha_finalizacion) 
 print(excavaciones_equipo)
+View(excavaciones_equipo)
 
 #Ejercicio 13 data_frame_datos_esqueletos
 set.seed(123)
@@ -127,6 +128,7 @@ altitud <- sample (c(0:2000),
 ubicaciones_geograficas <- data.frame(sitio_arqueologico = sitio_arqueologico, latitud = latitud,
                                       longitud = longitud, altitud = altitud)
 print(ubicaciones_geograficas)
+View(ubicaciones_geograficas)
 
 
 
